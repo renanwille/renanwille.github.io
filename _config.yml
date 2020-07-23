@@ -19,14 +19,14 @@ theme_settings:
 
   # Icons
   rss: false
-  email_address: renanwille@users.noreply.github.com
+  email_address:
   behance:
   bitbucket:
   dribbble:
   facebook:
   flickr:
   gitlab:
-  github:
+  github: renanwille
   google_plus:
   instagram:
   linkedin: https://www.linkedin.com/in/renanwille/
