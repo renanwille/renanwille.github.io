@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Keras pipeline update
+title: Keras pipeline update - from sequence generator to tf.data
 ---
+
+I was updating from Tensorflow 1.15 and Keras, when I got the message below,
+after a little research. I also found that the function fit_generator was deprecated
+since version 2.1 of Tensorflow and we are supposed to find other solutions to input data into the training pipeline.
+After researching a little bit I found it difficult to find the information needed to port from the generator that
+I was using to the new version. Besides that, I also discovered some problems
+related to the generators APIs that would freeze my training process. So I
+decided to investigate a little more how to move my python code into the tf.data
+pipeline.
 
 ```
 WARNING:tensorflow:multiprocessing can interact badly with TensorFlow
 ```
 
-I was updating from Tensorflow 1.15 and Keras, when I got the menssage above,
-after a little research I also found that the function fit_generator was deprecated
-since version 2.1 of Tensorflow and we are supposed to find other solutions to input data into the training pipeline.
-After researching a little bit I found difficult to find the information needed to port from the generator that
-I was using to the new version. Besides that I also discovered some problems
-related with the generators APIs that would freeze my training process. So I
-decided to investigate a little more how to move my python code into the tf.data
-pipeline.
-
 > Note: Community commenting multiprocess problems the same used in Sequence
 > generators [Tensorflow issue #39523](https://github.com/tensorflow/tensorflow/issues/39523)
 
-Well for starting I found the following article [Introduction to Keras for Engineers](https://keras.io/getting_started/intro_to_keras_for_engineers/). In here there is some tips into what inputs are available
+Well for starting I found the following article [Introduction to Keras for Engineers](https://keras.io/getting_started/intro_to_keras_for_engineers/). In here there are some tips into what inputs are available
 in the new API:
 
 * Numpy arrays;
@@ -70,7 +70,7 @@ from `dataset.map` function, it will be blocked by python's Global Interpreter L
 get more efficiency at this point is better to use `tf.image` API and get real concurrency in
 your data augmentations.
 
-Besides that, after implementing this steps we can use some nice tricks of the tf.data.Dataset
+Besides that, after implementing these steps we can use some nice tricks of the tf.data.Dataset
 to help us to create batches for working with data:
 
 * `dataset = dataset.prefetch(<num>)` - with this function we can prefetch data to input into the GPU and
@@ -80,12 +80,15 @@ gain some time between moving memory blocks.
 
 * `dataset = dataset.shuffle(3, reshuffle_each_iteration=True)` - This can be used to shuffle data before creating batches
 
-The nice thing of using Tensorflow data pipeline is that it really helps with pre-made functions. One can see the
+The nice thing about using the Tensorflow data pipeline is that it helps with pre-made functions. One can see the
 complete list of the API here [Tensorflow Dataset API](https://www.tensorflow.org/api_docs/python/tf/data/Dataset).
 
-Well by using this API I got rid of the locking problems when using Tensorflow, the only thing that remains is to parallelize the processing when needed. To do this we need to move more into using the Tensorflow `tf.image` API and get some speed. There is
-a nice support material in this link: [Kaggle - Rotation Augmentation Gpu Tpu](https://www.kaggle.com/cdeotte/rotation-augmentation-gpu-tpu-0-96).
+One more note, as we want to use the `py_function` returns into the Keras pipeline sometimes you may need to set the
+output shape so Keras can handle training correctly. This can be done with the function `set_shape()` of the output tensors.
 
-Hope this tips help you out!
+Well by using this API I got rid of the locking problems when using Tensorflow, the only thing that remains is to parallelize the processing when needed. To do this we need to move more into using the Tensorflow `tf.image` API and get some speed. There is
+nice support material in this link: [Kaggle - Rotation Augmentation Gpu Tpu](https://www.kaggle.com/cdeotte/rotation-augmentation-gpu-tpu-0-96).
+
+Hope these tips help you out!
 
 
