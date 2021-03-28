@@ -5,11 +5,11 @@ url: "https://renanwille.github.io/index.html"
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: SQUEEZE MY MIND
+  title: Renan B de C Wille
   avatar: assets/img/avatar.png
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
-  description: "A website to talk about machine learning and image processing" # used by search engines
+  description: "A personal website to organize my information so the world can make sense" # used by search engines
 
   # Header and footer text
   header_text:
