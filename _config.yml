@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl: "https://renanwille.github.io/"
-url: "https://renanwille.github.io/index.html"
+baseurl: "https://www.renanwille.xyz"
+url: "https://www.renanwille.xyz/index.html"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
