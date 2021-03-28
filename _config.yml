@@ -12,7 +12,7 @@ theme_settings:
   description: "A personal website to organize my information so the world can make sense" # used by search engines
 
   # Header and footer text
-  header_text:
+  header_text: "Hi! My name is Renan Wille and you are in my website! Feel free to move around"
   header_text_feature_image:
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
