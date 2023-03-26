@@ -78,7 +78,7 @@
             border-bottom: 1px solid #bdbdbd;
             margin-bottom: 15px;
         }
-        .contenttable li{
+        .contenttable > li{
             padding-bottom: 1.5rem;
             border-left: 1px solid #abaaed;
             position: relative;
@@ -86,14 +86,14 @@
             margin-left: 10px;
             list-style:none;
         }
-        .contenttable li::before {
+        .contenttable > li::before {
                 content: '';
                 width: 15px;
                 height: 15px;
                 background: #312222;
                 border-radius: 50%;
                 position: absolute;
-                left: -9px;
+                left: -8px;
                 top: 5px;
         }
         .contentsubtitle{
@@ -102,6 +102,15 @@
             font-style: normal;
             font-variant: normal;
             font-weight: 600;
+            font-size: 18px;
+            /* line-height:30%; */
+        }
+        .contentsubsubtitle{
+            font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+            text-align: left;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 450;
             font-size: 18px;
             /* line-height:30%; */
         }
@@ -616,7 +625,7 @@ HSxAX6xlImtT5wQhHRHsgBU06uuesVWyOxrfrmlqT4UFoJSGxS0PUE2Rjl901SIxrNk+4qpGtUQ6
                         </tr>
                         <tr>
                             <td><p class="leftmenutitle">Webpage:</p></td>
-                            <td><p class="leftmenutext"><a href="https://www.renanwille.xyz">www.renanwille.xyz</a></p></td>
+                            <td><p class="leftmenutext"><a href="https://www.renanwille.com.br">www.renanwille.com.br</a></p></td>
                         </tr>
                     </tbody>
                 </table>
@@ -655,27 +664,67 @@ HSxAX6xlImtT5wQhHRHsgBU06uuesVWyOxrfrmlqT4UFoJSGxS0PUE2Rjl901SIxrNk+4qpGtUQ6
                 </div>
                 <ul class="contenttable">
                     <li>
-                        <p class="contentsubtitle">2015 - 2022 - Pumatronix/Gaussian</p>
-                        <p class="contenttext">
-                            I've joined the Pumatronix team in 2014 as an <b>intern</b>(Jun 2014 - Dec 2014) from there I was <b>promoted</b> to <b>analyst developer</b> (2015 - 2018)
-                             and then to <b>software developer III</b>(2018 - 2022). Here I work with digital
-                             image processing looking to improve the optical character recognition(OCR), object tracking and object
-                             classification algorithms. To make this possible I leverage my knowledge of the full deep learning stack,
-                             from data cleaning to in cloud training, continuous delivery with MLOps and also accelerating
-                             feed forward with specialized hardware. Mainly working in PC and embedded platforms my preferred
-                             languages are C++ and python, but still use other languages for integration.
-                        </p>
+                        <p class="contentsubtitle">2018 / Now - Pumatronix/Gaussian</p>
+                        <ul>
+                            <li>
+                                <p class="contentsubsubtitle">Nov 2022 - Technical Lead</p>
+                                <p class="contenttext">- Leading a computer vision team to develop innovative software solutions</br>
+                                - Planning, designing and implementing software architecture improvements</br>
+                                - Evaluating and optimizing existing systems to ensure optimal performance</br>
+                                - Analyzing user requirements and identifying potential areas of improvement</br>
+                                - Collaborating with stakeholders to make informed decisions on software development</br>
+                                - Identifying process improvements and implementing new strategies to increase productivity</br>
+                                - Troubleshooting and resolving software issues in a timely manner</br>
+                                - Mentoring and training team members on best practices related to software development</p>
+                            </li>
+                            <li>
+                                <p class="contentsubsubtitle">Sep 2018 - Software Developer III</p>
+                                <p class="contenttext">- Developed, deployed and improved computer vision libraries</br>
+                                - Implemented and accelerated deep learning models on embedded hardware</br>
+                                - Assisted teammates in understanding the codebase</br>
+                                - Collaborated in architecture decisions</br>
+                                - Developed tooling to collect and analyze data to support software development decisions</br>
+                                - Introduced the concept of cloud computing for model training</p>
+                            </li>
+                            <li>
+                                <p class="contentsubsubtitle">Jan 2018 - Analyst Developer</p>
+                                <p class="contenttext">- Research and develop innovative computer vision deep learning solutions for new products</br>
+                                - Design and implement robust software infrastructure and systems to integrate computer vision deep learning solutions
+                                into products</br>
+                                - Experiment with cutting-edge computer vision deep learning technologies to identify and develop potential solutions
+                                for product enhancements</br>
+                                - Collaborate with teams to ensure successful implementation of computer vision deep learning solutions into products.</p>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <p class="contentsubtitle">Feb 2014 - Jun 2014 - Choice Tecnologia</p>
+                        <p class="contentsubtitle">2014 / 2017 - Gaussian Inteligência Computacional</p>
+                        <ul>
+                            <li>
+                                <p class="contentsubsubtitle">Jan 2015 - Analyst Developer</p>
+                                <p class="contenttext">- Conducted research and development to optimize OCR accuracy</br>
+                                - Developed and implemented backend tools to support various projects</br>
+                                - Created labels to be used in machine learning classification algorithms</br>
+                                - Found deep neural network models in literature, first trained them using theano and implemented them in production environment</p>
+                            </li>
+                            <li>
+                                <p class="contentsubsubtitle">Jun 2014 - Internship</p>
+                                <p class="contenttext">- Developing and implementing computer vision algorithms to achieve faster processing times.</br>
+                                - Debugging and troubleshooting existing C++ software to improve functionality and reliability.</br>
+                                - Experimenting with various research papers to identify opportunities for improvement in computer vision algorithms.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="contentsubtitle">2014 / 2014 - Choice Tecnologia</p>
                         <p class="contenttext">Internship in which I worked acquiring company stock data for the implementation of an inventory control system(WMS). Thus helping in automation from the receipt of materials to delivery to the customer.</p>
                     </li>
                     <li>
-                        <p class="contentsubtitle">May 2013 - Jul 2013 - GIPSA-lab</p>
+                        <p class="contentsubtitle">2013 / 2013 - GIPSA-lab</p>
                         <p class="contenttext">Research in the area of human cognition,study and modeling of the human visual system via software.</p>
                     </li>
                     <li>
-                        <p class="contentsubtitle">2012 - 2012 - Scientific Research - UFPR</p>
+                        <p class="contentsubtitle">2010 / 2012 - Scientific Research - UFPR</p>
                         <p class="contenttext">Research in the area of Bioelectronics and image processing.A pupilometer (apparatus for measuring the pupil) was developed from the ground up we had to develop hardware,firmware and software.</p>
                     </li>
                 </ul>
@@ -684,15 +733,15 @@ HSxAX6xlImtT5wQhHRHsgBU06uuesVWyOxrfrmlqT4UFoJSGxS0PUE2Rjl901SIxrNk+4qpGtUQ6
                 </div>
                 <ul class="contenttable">
                     <li>
-                        <p class="contentsubtitle" style="border-bottom: 1px solid #bdbdbd;">2016 - 2019 - Master - Deep Learning</p>
+                        <p class="contentsubtitle" style="border-bottom: 1px solid #bdbdbd;">2019 - Master - Deep Learning</p>
                         <p class="contenttext">UFPR - Universidade Tecnológica Federal do Paraná</p>
                     </li>
                     <li>
-                        <p class="contentsubtitle" style="border-bottom: 1px solid #bdbdbd;">2008 - 2015 - Eletrical engineering</p>
+                        <p class="contentsubtitle" style="border-bottom: 1px solid #bdbdbd;">2015 - Eletrical engineering</p>
                         <p class="contenttext">UFPR - Universidade Federal do Paraná</p>
                     </li>
                     <li>
-                        <p class="contentsubtitle" style="border-bottom: 1px solid #bdbdbd;">2012 - 2013 - Exchange To France</p>
+                        <p class="contentsubtitle" style="border-bottom: 1px solid #bdbdbd;">2012 - Exchange To France</p>
                         <p class="contenttext">UJF - Université Joseph Fourier</p>
                     </li>
                 </ul>
@@ -701,13 +750,25 @@ HSxAX6xlImtT5wQhHRHsgBU06uuesVWyOxrfrmlqT4UFoJSGxS0PUE2Rjl901SIxrNk+4qpGtUQ6
                 </div>
                 <div>
                     <p class="contenttext">
-                        Son of a photographer, I have always found it fantastic and interesting that we can register the world in the form of images and realize that people see these images in different ways.Working with images from birth, I became interested in the Faculty of Electrical Engineering and joined UFPR in 2008. During the course I soon had the opportunity to go deeper in the area of image processing and in 2010 I took part in a research to develop a pupilometer using image processing techniques.
+                        Son of a photographer, I have always found it fascinating and interesting how we can capture the world in images and how
+                        different people perceive those images. Having worked with images from a young age, I pursued my interest and joined
+                        UFPR in 2008 to study Electrical Engineering. In 2010, I had the opportunity to explore image processing further by
+                        taking part in a research project to develop a pupilometer.
                     </p>
                     <p class="contenttext">
-                        From then on,seeing the need for an specialization, I left for a sandwich degree at Joseph Fourrier University in France. There, I studied signal processing and also had contact with image classification and studied some neurology in order to understand a little of how the visual cortex works.
+                        Realizing the need for a more specialized understanding, I left for a sandwich degree at Joseph Fourrier University in
+                        France. There, I studied signal processing, image classification, and some neurology to gain insight into the workings
+                        of the visual cortex.
                     </p>
                     <p class="contenttext">
-                        Returning to Brazil, I had a great opportunity to work with the Pumatronix team. At the company,I ended up improving myself in digital image processing and machine learning. Still in 2016,I started to study a master's degree to understand and deepen my knowledge in deep learning technologies, which allowed me to obtain the title of Master of Science. Today,I continue to research how to better understand machine learning models and how to present its data.
+                        Back in Brazil, I was fortunate enough to join the Pumatronix team, where I further developed my expertise in digital
+                        image processing and machine learning. In 2016, I started a Masters program to gain a better understanding of deep
+                        learning technologies, eventually earning a Master of Science degree. Currently, I am conducting research on how to
+                        better comprehend machine learning models and how to present the data they generate.
+                    </p>
+                    <p class="contenttext">
+                        My future interests lie in exploring the wider world of machine learning, such as learning about language and audio models,
+                        developing recommendation systems, and other related topics.
                     </p>
                 </div>
             </div>
