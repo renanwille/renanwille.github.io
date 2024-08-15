@@ -2,3 +2,8 @@ docusaurus:
   label: Docusaurus
   permalink: /docusaurus
   description: Docusaurus tag description
+
+embedded-systems:
+  label: Embedded Systems
+  permalink: /embedded-systems
+  description: Embedded systems related posts
