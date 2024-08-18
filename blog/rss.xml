@@ -9,6 +9,21 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
+            <title><![CDATA[Yocto and Embedded systems]]></title>
+            <link>https://renanwille.com.br/blog/yocto-and-embedded-systems</link>
+            <guid>https://renanwille.com.br/blog/yocto-and-embedded-systems</guid>
+            <pubDate>Wed, 14 Aug 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lately I'm reflecting into the fact that viewing how people work from other parts of the world in your area may help a lot your own understanding.]]></description>
+            <content:encoded><![CDATA[<p>Lately I'm reflecting into the fact that viewing how people work from other parts of the world in your area may help a lot your own understanding.</p>
+<p>Lately I've been researching more deeply how to use yocto to build embedded systems and also learning a lot from other tools in code quality. For now the good materials that I've collected are detailed in this article:</p>
+<ul>
+<li><a href="https://renanwille.com.br/docs/embedded-systems/yocto">Yocto</a></li>
+</ul>
+<p>But I've come to the realization that in this world there are so many ways to build a single system and they end up overlapping themselves. So learning the basis and how they work and how these are structured can help a lot. Also it seems to me that only a handful of tools are what make our processes easier.</p>
+<p>For now AI is coming together in this way in some tools, but I still miss the easiness of using all of them. Maybe we are missing people that really understand how to guide the users to construct something like this?</p>]]></content:encoded>
+            <category>Embedded Systems</category>
+        </item>
+        <item>
             <title><![CDATA[First Blog Post]]></title>
             <link>https://renanwille.com.br/blog/first-blog-post</link>
             <guid>https://renanwille.com.br/blog/first-blog-post</guid>
