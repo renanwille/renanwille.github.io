@@ -7,3 +7,8 @@ embedded-systems:
   label: Embedded Systems
   permalink: /embedded-systems
   description: Embedded systems related posts
+
+introspection:
+  label: Introspection
+  permalink: /introspection
+  description: Thoughts about life
