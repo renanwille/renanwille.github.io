@@ -12,3 +12,8 @@ introspection:
   label: Introspection
   permalink: /introspection
   description: Thoughts about life
+
+productivity:
+  label: Productivity
+  permalink: /productivity
+  description: productivity related posts
