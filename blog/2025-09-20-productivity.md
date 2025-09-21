@@ -1,8 +1,9 @@
 ---
-slug: first-blog-post
+slug: productivity
 title: AI Productivity
 authors: [renanwille]
 tags: [productivity]
+draft: true
 ---
 
 Since the pandemic hit the world, I have noticed that from time to time I end up feeling overwhelmed by work and I haven't yet found the perfect solution for this. I think that on our actual society we have a problem related to what means to be productive, many times, being productive means that we don't stop doing things from our entire week. This doesn't make sense because having time off can make us bored and help us think and maybe arrive at conclusions that are better for what we are doing right now.
